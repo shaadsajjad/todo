@@ -1,3 +1,5 @@
+import 'package:todos_api/todos_api.dart';
+
 /// {@template todos_api}
 /// The interface and models for an API providing access to todos.
 /// {@endtemplate}
@@ -12,7 +14,7 @@ abstract class TodosApi {
 
   Future<int> clearCompleted();
 
-  Future<int> completeAll({required bool isComplete});
+  Future<int> completeAll({required bool isCompleted});
 
   Future<void> close();
 }

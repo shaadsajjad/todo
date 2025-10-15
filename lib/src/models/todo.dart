@@ -12,6 +12,7 @@ class Todo extends Equatable {
     required this.title,
     String? id,
     this.description = '',
+
     this.isCompleted = false,
 }) : assert (
   id == null || id.isNotEmpty,
@@ -40,7 +41,7 @@ class Todo extends Equatable {
 
   static Todo fromJson(JsonMap json)=> _$TodoFromJson(json);
 
-  JsonMap toJson() => _$TodoToJson(this);
+ //JsonMap toJson() => _$TodoToJson(this);
 
   @override
   // TODO: implement props
