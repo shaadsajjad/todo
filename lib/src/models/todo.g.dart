@@ -25,7 +25,7 @@ Todo _$TodoFromJson(Map<String, dynamic> json) => $checkedCreate(
   fieldKeyMap: const {'isCompleted': 'isCompleted'},
 );
 
-Map<String, dynamic> _$TodoToJson(Todo instance) => <String, dynamic>{
+Map<String, dynamic> _$TodoToJson(Todo instance) => <String,  dynamic>{
   'id': instance.id,
   'title': instance.title,
   'description': instance.description,
